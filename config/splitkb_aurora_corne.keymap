@@ -30,7 +30,7 @@
                     label = "TAP_DANCE_DOWN_PAGEDOWN";
                     #binding-cells = <0>;
                     tapping-term-ms = <200>;
-                    bindings = <&kp DN>, <&kp PG_DN>;
+                    bindings = <&kp DOWN>, <&kp PG_DN>;
                 };
                 td_up_pgup: tap_dance_up_pageup {
                     compatible = "zmk,behavior-tap-dance";
