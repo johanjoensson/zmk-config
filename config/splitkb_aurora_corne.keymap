@@ -10,7 +10,6 @@
 
 
 / {
-/ {
         behaviors {
         td_esc_caps: tap_dance_esc_caps {
             compatible = "zmk,behavior-tap-dance";
