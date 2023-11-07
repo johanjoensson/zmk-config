@@ -60,7 +60,7 @@
                     label = "MODMORP_BAKSPACE_DELETE";
                     #binding-cells = <0>;
                     bindings = <&kp BSPC>, <&kp DEL>;
-                    mods = <(MOD_LSHFT | MOD_RSHFT)>;
+                    mods = <(MOD_LSFT | MOD_RSFT)>;
                 };
         };
 
