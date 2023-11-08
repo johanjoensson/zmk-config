@@ -21,6 +21,13 @@
                     flavor = "tap-preferred";
                     bindings = <&kp>, <&kp>;
                 };
+                td_2: tap_dance_2{
+                    compatible = "zmk,behavior-tap-dance";
+                    label = "TAP_DANCE_2";
+                    #binding-cells = <2>;
+                    tapping-term-ms = <200>;
+                    bindings = <&kp>, <&kp>;
+                };
                 td_esc_caps: tap_dance_esc_caps {
                     compatible = "zmk,behavior-tap-dance";
                     label = "TAP_DANCE_ESC_CAPS";
@@ -56,6 +63,13 @@
                     tapping-term-ms = <200>;
                     bindings = <&kp RIGHT>, <&kp END>;
                 };
+                mm_shift: modmorph_shift {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "MODMORP_SHIFT";
+                    #binding-cells = <2>;
+                    bindings = <&kp>, <&kp>;
+                    mods = <(MOD_LSFT | MOD_RSFT)>;
+                };
                 mm_bspc_del: modmorph_backspace_delete {
                     compatible = "zmk,behavior-mod-morph";
                     label = "MODMORP_BAKSPACE_DELETE";
@@ -70,16 +84,16 @@
 
                 default_layer {
                                                 bindings = <
-                           &kp TAB      &kp Q      &kp W      &kp E        &kp R       &kp T                                      &kp Y   &kp U        &kp I        &kp O      &kp P         &mm_bspc_del
-                           &td_esc_caps &hm LGUI A &hm LALT S &hm LSHIFT D &hm LCTRL F &kp G                                      &kp H   &hm LCTRL J  &hm LSHIFT K &hm LALT L &hm LGUI SEMI &kp SQT
-                           &kp LSHFT    &kp Z      &kp X      &kp C        &kp V       &kp B                                      &kp N   &kp M        &kp COMMA    &kp DOT    &kp FSLH      &kp LCTRL
-                                                                           &kp LGUI    &kp SPACE &mo 1                      &mo 2 &kp RET &kp LALT
+                           &kp TAB        &kp Q      &kp W      &kp E        &kp R       &kp T                                      &kp Y   &kp U        &kp I        &kp O      &kp P         &mm_shift BACKSPACE DEL
+                           &td_2 ESC CAPS &hm LGUI A &hm LALT S &hm LSHIFT D &hm LCTRL F &kp G                                      &kp H   &hm LCTRL J  &hm LSHIFT K &hm LALT L &hm LGUI SEMI &kp SQT
+                           &kp LSHFT      &kp Z      &kp X      &kp C        &kp V       &kp B                                      &kp N   &kp M        &kp COMMA    &kp DOT    &kp FSLH      &kp LCTRL
+                                                                             &kp LGUI    &kp SPACE &mo 1                      &mo 2 &kp RET &kp LALT
                                                 >;
                 };
                 number_layer {
                                                 bindings = <
                            &trans       &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                                   &kp N6        &kp N7      &kp N8      &kp N9        &kp N0 &trans
-                           &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                             &td_left_home &td_dn_pgdn &td_up_pgup &td_right_end &trans &trans
+                           &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                             &td_2 LEFT HOME &td_2 DN PGDN &td_2 UP PGUP &td_2 RIGHT END &trans &trans
                            &out OUT_TOG &out OUT_BLE &trans       &trans       &trans       &trans                                   &trans        &trans      &trans      &trans        &trans &trans
                                                                                &trans       &trans       &trans               &mo 3  &trans        &trans
                                                 >;
