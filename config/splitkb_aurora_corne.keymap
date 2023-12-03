@@ -89,7 +89,7 @@
         macros {
                 swe_a_circ: swe_a_circ {
                     wait-ms = <15>;
-                    tap-ms = <5>;
+                    tap-ms = <15>;
                     label = "ZM_swe_a_circ";
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
@@ -102,7 +102,7 @@
                 };
                 swe_shift_a_circ: swe_shift_a_circ {
                     wait-ms = <15>;
-                    tap-ms = <5>;
+                    tap-ms = <15>;
                     label = "ZM_swe_shift_a_circ";
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
@@ -115,7 +115,7 @@
                 };
                 swe_a_dia: swe_a_dia {
                     wait-ms = <15>;
-                    tap-ms = <5>;
+                    tap-ms = <15>;
                     label = "ZM_swe_a_dia";
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
@@ -128,7 +128,7 @@
                 };
                 swe_shift_a_dia: swe_shift_a_dia {
                     wait-ms = <15>;
-                    tap-ms = <5>;
+                    tap-ms = <15>;
                     label = "ZM_swe_shift_a_dia";
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
@@ -141,7 +141,7 @@
                 };
                 swe_o_dia: swe_o_dia {
                     wait-ms = <15>;
-                    tap-ms = <5>;
+                    tap-ms = <15>;
                     label = "ZM_swe_o_dia";
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
@@ -154,7 +154,7 @@
                 };
                 swe_shift_o_dia: swe_shift_o_dia {
                     wait-ms = <15>;
-                    tap-ms = <5>;
+                    tap-ms = <15>;
                     label = "ZM_swe_shift_o_dia";
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
