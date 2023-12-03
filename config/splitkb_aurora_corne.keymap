@@ -187,7 +187,7 @@
                                 key-positions = <7 8>;
                                 bindings = <&mm_bspc_del>;
                         };
-                        combo_backspace {
+                        combo_enter {
                                 timeout-ms = <50>;
                                 key-positions = <19 20>;
                                 bindings = <&kp RET>;
