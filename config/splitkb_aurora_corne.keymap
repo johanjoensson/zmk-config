@@ -108,7 +108,7 @@
                             , <&macro_tap &kp 0 &kp 0 &kp C &kp 5 &kp RET>
                             ;
                 };
-                swe: swe_a_dia {
+                swe_a_dia: swe_a_dia {
                     wait-ms = <5>;
                     tap-ms = <5>;
                     label = "ZM_swe_a_dia";
