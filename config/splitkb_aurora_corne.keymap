@@ -63,7 +63,6 @@
                     #binding-cells = <0>;
                     bindings = <&kp BACKSPACE>, <&kp DELETE>;
                     mods = <(MOD_LSFT|MOD_RSFT)>;
-                    keep-mods = <(MOD_RSFT)>;
                 };
                 mm_swe_a_circ: modmorph_swe_a_circ {
                     compatible = "zmk,behavior-mod-morph";
@@ -71,7 +70,6 @@
                     #binding-cells = <0>;
                     bindings = <&swe_a_circ>, <&swe_shift_a_circ>;
                     mods = <(MOD_LSFT | MOD_RSFT)>;
-                    masked_mods = <(MOD_LSFT|MOD_RSFT)>;
                 };
                 mm_swe_a_dia: modmorph_swe_a_dia {
                     compatible = "zmk,behavior-mod-morph";
@@ -79,7 +77,6 @@
                     #binding-cells = <0>;
                     bindings = <&swe_a_dia>, <&swe_shift_a_dia>;
                     mods = <(MOD_LSFT | MOD_RSFT)>;
-                    masked_mods = <(MOD_LSFT|MOD_RSFT)>;
                 };
                 mm_swe_o_dia: modmorph_swe_o_dia {
                     compatible = "zmk,behavior-mod-morph";
@@ -87,11 +84,12 @@
                     #binding-cells = <0>;
                     bindings = <&swe_o_dia>, <&swe_shift_o_dia>;
                     mods = <(MOD_LSFT | MOD_RSFT)>;
-                    masked_mods = <(MOD_LSFT|MOD_RSFT)>;
                 };
         };
         macros {
                 swe_a_circ: swe_a_circ {
+                    wait-ms = <5>;
+                    tap-ms = <5>;
                     label = "ZM_swe_a_circ";
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
@@ -103,6 +101,8 @@
                             ;
                 };
                 swe_shift_a_circ: swe_shift_a_circ {
+                    wait-ms = <5>;
+                    tap-ms = <5>;
                     label = "ZM_swe_shift_a_circ";
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
@@ -114,8 +114,8 @@
                             ;
                 };
                 swe_a_dia: swe_a_dia {
-                    /* wait-ms = <5>; */
-                    /* tap-ms = <5>; */
+                    wait-ms = <5>;
+                    tap-ms = <5>;
                     label = "ZM_swe_a_dia";
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
@@ -127,8 +127,8 @@
                             ;
                 };
                 swe_shift_a_dia: swe_shift_a_dia {
-                    /* wait-ms = <5>; */
-                    /* tap-ms = <5>; */
+                    wait-ms = <5>;
+                    tap-ms = <5>;
                     label = "ZM_swe_shift_a_dia";
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
@@ -140,8 +140,8 @@
                             ;
                 };
                 swe_o_dia: swe_o_dia {
-                    /* wait-ms = <5>; */
-                    /* tap-ms = <5>; */
+                    wait-ms = <5>;
+                    tap-ms = <5>;
                     label = "ZM_swe_o_dia";
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
@@ -153,10 +153,8 @@
                             ;
                 };
                 swe_shift_o_dia: swe_shift_o_dia {
-                /*
                     wait-ms = <5>;
                     tap-ms = <5>;
-                 */
                     label = "ZM_swe_shift_o_dia";
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
