@@ -95,8 +95,8 @@
                     bindings
                             = <&macro_press &kp LCTRL &kp LSHFT>
                             , <&macro_tap &kp U>
-                            , <&macro_release &kp LCTRL &kp LSHFT>
                             , <&macro_tap &kp 0 &kp 0 &kp E &kp 5 &kp RET>
+                            , <&macro_release &kp LCTRL &kp LSHFT>
                             ;
                 };
                 swe_shift_a_circ: swe_shift_a_circ {
@@ -106,8 +106,8 @@
                     bindings
                             = <&macro_press &kp LCTRL &kp LSHFT>
                             , <&macro_tap &kp U>
-                            , <&macro_release &kp LCTRL &kp LSHFT>
                             , <&macro_tap &kp 0 &kp 0 &kp C &kp 5 &kp RET>
+                            , <&macro_release &kp LCTRL &kp LSHFT>
                             ;
                 };
                 swe_a_dia: swe_a_dia {
@@ -119,8 +119,8 @@
                     bindings
                             = <&macro_press &kp LCTRL &kp LSHFT>
                             , <&macro_tap &kp U>
-                            , <&macro_release &kp LCTRL &kp LSHFT>
                             , <&macro_tap &kp 0 &kp 0 &kp E &kp 4 &kp RET>
+                            , <&macro_release &kp LCTRL &kp LSHFT>
                             ;
                 };
                 swe_shift_a_dia: swe_shift_a_dia {
@@ -132,8 +132,8 @@
                     bindings
                             = <&macro_press &kp LCTRL &kp LSHFT>
                             , <&macro_tap &kp U>
-                            , <&macro_release &kp LCTRL &kp LSHFT>
                             , <&macro_tap &kp 0 &kp 0 &kp C &kp 4 &kp RET>
+                            , <&macro_release &kp LCTRL &kp LSHFT>
                             ;
                 };
                 swe_o_dia: swe_o_dia {
@@ -145,8 +145,8 @@
                     bindings
                             = <&macro_press &kp LCTRL &kp LSHFT>
                             , <&macro_tap &kp U>
-                            , <&macro_release &kp LCTRL &kp LSHFT>
                             , <&macro_tap &kp 0 &kp 0 &kp F &kp 6 &kp RET>
+                            , <&macro_release &kp LCTRL &kp LSHFT>
                             ;
                 };
                 swe_shift_o_dia: swe_shift_o_dia {
@@ -158,9 +158,9 @@
                     bindings
                             = <&macro_press &kp LCTRL &kp LSHFT>
                             , <&macro_tap &kp U>
-                            , <&macro_release &kp LCTRL &kp LSHFT>
                             , <&macro_tap &kp 0 &kp 0 &kp D &kp 6 &kp RET>
-                                 ;
+                            , <&macro_release &kp LCTRL &kp LSHFT>
+                            ;
                 };
         };
         combos {
