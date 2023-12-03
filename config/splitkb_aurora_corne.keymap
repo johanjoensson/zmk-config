@@ -110,7 +110,7 @@
                             = <&macro_press &kp LCTRL &kp LSHFT>
                             , <&macro_tap &kp U>
                             , <&macro_release &kp LCTRL &kp LSHFT>
-                            , <&macro_tap &kx 0 &kp 0 &kp C &kp 5 &kp SPACE>
+                            , <&macro_tap &kp 0 &kp 0 &kp C &kp 5 &kp SPACE>
                             ;
                 };
                 swe_a_dia: swe_a_dia {
