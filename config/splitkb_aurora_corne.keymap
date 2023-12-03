@@ -85,8 +85,6 @@
                     bindings = <&swe_o_dia>, <&swe_shift_o_dia>;
                     mods = <(MOD_LSFT | MOD_RSFT)>;
                 };
-        };
-        / {
                 macros {
                     swe_a_circ: swe_a_circ {
                         label = "ZM_swe_shift_a_circ";
@@ -167,8 +165,6 @@
                                 ;
                         };
                 };
-        };
-        / {
                 combos {
                         compatible = "zmk,combos";
                         combo_esc {
