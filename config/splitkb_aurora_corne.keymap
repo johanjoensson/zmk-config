@@ -96,7 +96,7 @@
                                 , <&macro_tap &kp U>
                                 , <&macro_release &kp LSHFT>
                                 , <&macro_release &kp LCTRL>
-                                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N5 &kp ENT>
+                                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N5 &kp RET>
                                 ;
                         };
                     swe_shift_a_circ: swe_shift_a_circ {
@@ -109,7 +109,7 @@
                                 , <&macro_tap &kp U>
                                 , <&macro_release &kp LSHFT>
                                 , <&macro_release &kp LCTRL>
-                                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp C &kp KP_N5 &kp ENT>
+                                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp C &kp KP_N5 &kp RET>
                                 ;
                         };
                     swe_a_dia: swe_a_dia {
@@ -122,7 +122,7 @@
                                 , <&macro_tap &kp U>
                                 , <&macro_release &kp LSHFT>
                                 , <&macro_release &kp LCTRL>
-                                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N4 &kp ENT>
+                                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N4 &kp RET>
                                 ;
                         };
                     swe_shift_a_dia: swe_shift_a_dia {
@@ -135,7 +135,7 @@
                                 , <&macro_tap &kp U>
                                 , <&macro_release &kp LSHFT>
                                 , <&macro_release &kp LCTRL>
-                                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp C &kp KP_N4 &kp ENT>
+                                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp C &kp KP_N4 &kp RET>
                                 ;
                         };
                     swe_o_dia: swe_o_dia {
@@ -148,7 +148,7 @@
                                 , <&macro_tap &kp U>
                                 , <&macro_release &kp LSHFT>
                                 , <&macro_release &kp LCTRL>
-                                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp KP_N6 &kp ENT>
+                                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp KP_N6 &kp RET>
                                 ;
                         };
                     swe_shift_o_dia: swe_shift_o_dia {
@@ -161,7 +161,7 @@
                                 , <&macro_tap &kp U>
                                 , <&macro_release &kp LSHFT>
                                 , <&macro_release &kp LCTRL>
-                                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp D &kp KP_N6 &kp ENT>
+                                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp D &kp KP_N6 &kp RET>
                                 ;
                         };
                 };
@@ -190,7 +190,7 @@
                         combo_backspace {
                                 timeout-ms = <50>;
                                 key-positions = <19 20>;
-                                bindings = <&kp ENT>;
+                                bindings = <&kp RET>;
                         };
                         combo_swe_a_circ {
                                 timeout-ms = <50>;
