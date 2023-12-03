@@ -11,6 +11,7 @@
 
 
 / {
+/*
         behaviors {
                 hm: homerow_mod{
                     compatible = "zmk,behavior-hold-tap";
@@ -57,7 +58,6 @@
                     tapping-term-ms = <200>;
                     bindings = <&kp RIGHT>, <&kp END>;
                 };
-                /*
                 mm_bspc_del: modmorph_backspace_delete {
                     compatible = "zmk,behavior-mod-morph";
                     label = "MODMORP_BAKSPACE_DELETE";
@@ -86,9 +86,7 @@
                     bindings = <&swe_o_dia>, <&swe_shift_o_dia>;
                     mods = <(MOD_LSFT | MOD_RSFT)>;
                 };
-                */
         };
-/*
         macros {
                 swe_a_circ: swe_a_circ {
                     label = "ZM_swe_shift_a_circ";
@@ -219,15 +217,15 @@
                 default_layer {
                                                 bindings = <
                            &kp TAB        &kp Q      &kp W      &kp E        &kp R       &kp T                                      &kp Y   &kp U        &kp I        &kp O      &kp P         &kp BSPC
-                           &td_esc_caps   &hm LGUI A &hm LALT S &kp D        &hm LCTRL F &kp G                                      &kp H   &hm LCTRL J  &kp K        &hm LALT L &hm LGUI SEMI &kp SQT
+                           &kp ESC        &kp A      &kp S      &kp D        &kp F       &kp G                                      &kp H   &kp J        &kp K        &kp L      &kp SEMI      &kp SQT
                            &kp LSHFT      &kp Z      &kp X      &kp C        &kp V       &kp B                                      &kp N   &kp M        &kp COMMA    &kp DOT    &kp FSLH      &kp LCTRL
-                                                                             &kp LGUI    &hm LSHIFT SPACE &mo 1        &mo 2 &hm LSHIFT RET &kp LALT
+                                                                             &kp LGUI    &hm LSHIFT SPACE &mo 1        &mo 2 &kp RET        &kp LALT
                                                 >;
                 };
                 number_layer {
                                                 bindings = <
                            &trans       &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                                   &kp N6        &kp N7      &kp N8      &kp N9        &kp N0 &trans
-                           &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                             &td_left_home &td_dn_pgdn &td_up_pgup &td_right_end &trans &trans
+                           &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                             &kp LEFT      &kp DOWN    &kp UP      &kp RIGHT     &trans &trans
                            &out OUT_TOG &out OUT_BLE &trans       &trans       &trans       &trans                                   &trans        &trans      &trans      &trans        &trans &trans
                                                                                &trans       &trans       &trans               &mo 3  &trans        &trans
                                                 >;
