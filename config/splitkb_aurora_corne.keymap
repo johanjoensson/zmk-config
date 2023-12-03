@@ -170,17 +170,17 @@
                 compatible = "zmk,combos";
                 combo_esc {
                         timeout-ms = <50>;
-                        key-positions = <13 14>;
+                        key-positions = <14 15>;
                         bindings = <&td_esc_caps>;
                 };
                 combo_tab {
                         timeout-ms = <50>;
-                        key-positions = <1 2>;
+                        key-positions = <2 3>;
                         bindings = <&kp TAB>;
                 };
                 combo_shift_tab {
                         timeout-ms = <50>;
-                        key-positions = <2 3>;
+                        key-positions = <3 4>;
                         bindings = <&kp LS(TAB)>;
                 };
                 combo_backspace {
@@ -195,17 +195,17 @@
                 };
                 combo_swe_a_circ {
                         timeout-ms = <50>;
-                        key-positions = <20 21>;
+                        key-positions = <8 9>;
                         bindings = <&mm_swe_a_circ>;
                 };
                 combo_swe_a_dia {
                         timeout-ms = <50>;
-                        key-positions = <32 33>;
+                        key-positions = <20 21>;
                         bindings = <&mm_swe_a_dia>;
                 };
                 combo_swe_o_dia {
                         timeout-ms = <50>;
-                        key-positions = <44 45>;
+                        key-positions = <32 33>;
                         bindings = <&mm_swe_o_dia>;
                 };
         };
@@ -217,7 +217,7 @@
                            &kp TAB        &kp Q      &kp W      &kp E        &kp R       &kp T                                      &kp Y   &kp U        &kp I        &kp O      &kp P         &mm_bspc_del
                            &td_esc_caps   &hm LGUI A &hm LALT S &kp D        &hm LCTRL F &kp G                                      &kp H   &hm LCTRL J  &kp K        &hm LALT L &hm LGUI SEMI &kp SQT
                            &kp LSHFT      &kp Z      &kp X      &kp C        &kp V       &kp B                                      &kp N   &kp M        &kp COMMA    &kp DOT    &kp FSLH      &kp LCTRL
-                                                                             &kp LGUI    &hm LSFT SPACE &mo 1            &mo 2 &hm LSFT RET &kp LALT
+                                                                             &kp LGUI    &hm LSHFT SPACE &mo 1          &mo 2 &hm LSHFT RET &kp LALT
                                                 >;
                 };
                 number_layer {
