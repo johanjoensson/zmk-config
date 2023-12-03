@@ -98,7 +98,7 @@
                             , <&macro_tap &kp U>
                             , <&macro_release &kp LSHFT>
                             , <&macro_release &kp LCTRL>
-                            , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N5 &kp RET>
+                            , <&macro_tap &kp 0 &kp 0 &kp E &kp 5 &kp RET>
                             ;
                 };
                 swe_shift_a_circ: swe_shift_a_circ {
@@ -111,7 +111,7 @@
                                   , <&macro_tap &kp U>
                                   , <&macro_release &kp LSHFT>
                                   , <&macro_release &kp LCTRL>
-                                  , <&macro_tap &kp KP_N0 &kp KP_N0 &kp C &kp KP_N5 &kp RET>
+                                  , <&macro_tap &kp 0 &kp 0 &kp C &kp 5 &kp RET>
                                   ;
                 };
                 swe_a_dia: swe_a_dia {
@@ -124,7 +124,7 @@
                            , <&macro_tap &kp U>
                            , <&macro_release &kp LSHFT>
                            , <&macro_release &kp LCTRL>
-                           , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N4 &kp RET>
+                           , <&macro_tap &kp 0 &kp 0 &kp E &kp 4 &kp RET>
                            ;
                 };
                 swe_shift_a_dia: swe_shift_a_dia {
@@ -137,7 +137,7 @@
                                  , <&macro_tap &kp U>
                                  , <&macro_release &kp LSHFT>
                                  , <&macro_release &kp LCTRL>
-                                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp C &kp KP_N4 &kp RET>
+                                 , <&macro_tap &kp 0 &kp 0 &kp C &kp 4 &kp RET>
                                  ;
                 };
                 swe_o_dia: swe_o_dia {
@@ -150,7 +150,7 @@
                            , <&macro_tap &kp U>
                            , <&macro_release &kp LSHFT>
                            , <&macro_release &kp LCTRL>
-                           , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp KP_N6 &kp RET>
+                           , <&macro_tap &kp 0 &kp 0 &kp F &kp 6 &kp RET>
                            ;
                 };
                 swe_shift_o_dia: swe_shift_o_dia {
@@ -161,9 +161,9 @@
                                  = <&macro_press &kp LCTRL>
                                  , <&macro_press &kp LSHFT>
                                  , <&macro_tap &kp U>
-                                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp D &kp KP_N6 &kp RET>
                                  , <&macro_release &kp LSHFT>
                                  , <&macro_release &kp LCTRL>
+                                 , <&macro_tap &kp 0 &kp 0 &kp D &kp 6 &kp RET>
                                  ;
                 };
         };
