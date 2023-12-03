@@ -64,7 +64,157 @@
                     bindings = <&kp BSPC>, <&kp DEL>;
                     mods = <(MOD_LSFT | MOD_RSFT)>;
                 };
+                mm_swe_a_circ: modmorph_swe_a_circ {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "MODMORP_BAKSPACE_DELETE";
+                    #binding-cells = <0>;
+                    bindings = <&swe_a_circ>, <&swe_shift_a_circ>;
+                    mods = <(MOD_LSFT | MOD_RSFT)>;
+                };
+                mm_swe_a_dia: modmorph_swe_a_dia {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "MODMORP_BAKSPACE_DELETE";
+                    #binding-cells = <0>;
+                    bindings = <&swe_a_dia>, <&swe_shift_a_dia>;
+                    mods = <(MOD_LSFT | MOD_RSFT)>;
+                };
+                mm_swe_o_dia: modmorph_swe_o_dia {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "MODMORP_BAKSPACE_DELETE";
+                    #binding-cells = <0>;
+                    bindings = <&swe_o_dia>, <&swe_shift_o_dia>;
+                    mods = <(MOD_LSFT | MOD_RSFT)>;
+                };
         };
+        / {
+                macros {
+                    swe_a_circ: swe_a_circ {
+                        label = "ZM_swe_shift_a_circ";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings
+                                = <&macro_press &kp LCTRL>
+                                , <&macro_press &kp LSHFT>
+                                , <&macro_tap &kp U>
+                                , <&macro_release &kp LSHFT>
+                                , <&macro_release &kp LCTRL>
+                                , <&macro_tap &kp N0 &kp N0 &kp N0 &kp E &kp N5 &kp ENT>
+                                ;
+                        };
+                    swe_shift_a_circ: swe_shift_a_circ {
+                        label = "ZM_swe_shift_a_circ";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings
+                                = <&macro_press &kp LCTRL>
+                                , <&macro_press &kp LSHFT>
+                                , <&macro_tap &kp U>
+                                , <&macro_release &kp LSHFT>
+                                , <&macro_release &kp LCTRL>
+                                , <&macro_tap &kp N0 &kp N0 &kp N0 &kp C &kp N5 &kp ENT>
+                                ;
+                        };
+                    swe_a_dia: swe_a_dia {
+                        label = "ZM_swe_a_dia";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings
+                                = <&macro_press &kp LCTRL>
+                                , <&macro_press &kp LSHFT>
+                                , <&macro_tap &kp U>
+                                , <&macro_release &kp LSHFT>
+                                , <&macro_release &kp LCTRL>
+                                , <&macro_tap &kp N0 &kp N0 &kp N0 &kp E &kp N4 &kp ENT>
+                                ;
+                        };
+                    swe_shift_a_dia: swe_shift_a_dia {
+                        label = "ZM_swe_shift_a_dia";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings
+                                = <&macro_press &kp LCTRL>
+                                , <&macro_press &kp LSHFT>
+                                , <&macro_tap &kp U>
+                                , <&macro_release &kp LSHFT>
+                                , <&macro_release &kp LCTRL>
+                                , <&macro_tap &kp N0 &kp N0 &kp N0 &kp C &kp N4 &kp ENT>
+                                ;
+                        };
+                    swe_o_dia: swe_o_dia {
+                        label = "ZM_swe_o_dia";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings
+                                = <&macro_press &kp LCTRL>
+                                , <&macro_press &kp LSHFT>
+                                , <&macro_tap &kp U>
+                                , <&macro_release &kp LSHFT>
+                                , <&macro_release &kp LCTRL>
+                                , <&macro_tap &kp N0 &kp N0 &kp N0 &kp F &kp N6 &kp ENT>
+                                ;
+                        };
+                    swe_shift_o_dia: swe_shift_o_dia {
+                        label = "ZM_swe_shift_o_dia";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings
+                                = <&macro_press &kp LCTRL>
+                                , <&macro_press &kp LSHFT>
+                                , <&macro_tap &kp U>
+                                , <&macro_release &kp LSHFT>
+                                , <&macro_release &kp LCTRL>
+                                , <&macro_tap &kp N0 &kp N0 &kp N0 &kp D &kp N6 &kp ENT>
+                                ;
+                        };
+                };
+        };
+        / {
+                combos {
+                        compatible = "zmk,combos";
+                        combo_esc {
+                                timeout-ms = <50>;
+                                key-positions = <13 14>;
+                                bindings = <&td_esc_caps>;
+                        };
+                        combo_tab {
+                                timeout-ms = <50>;
+                                key-positions = <1 2>;
+                                bindings = <&kp TAB>;
+                        };
+                        combo_shift_tab {
+                                timeout-ms = <50>;
+                                key-positions = <2 3>;
+                                bindings = <&kp LS(TAB)>;
+                        };
+                        combo_backspace {
+                                timeout-ms = <50>;
+                                key-positions = <7 8>;
+                                bindings = <&mm_bspc_del>;
+                        };
+                        combo_backspace {
+                                timeout-ms = <50>;
+                                key-positions = <19 20>;
+                                bindings = <&kp ENT>;
+                        };
+                        combo_swe_a_circ {
+                                timeout-ms = <50>;
+                                key-positions = <20 21>;
+                                bindings = <&mm_swe_a_circ>;
+                        };
+                        combo_swe_a_dia {
+                                timeout-ms = <50>;
+                                key-positions = <32 33>;
+                                bindings = <&mm_swe_a_dia>;
+                        };
+                        combo_swe_o_dia {
+                                timeout-ms = <50>;
+                                key-positions = <44 45>;
+                                bindings = <&mm_swe_o_dia>;
+                        };
+                };
+        };
+
+
 
         keymap {
                 compatible = "zmk,keymap";
@@ -72,9 +222,9 @@
                 default_layer {
                                                 bindings = <
                            &kp TAB        &kp Q      &kp W      &kp E        &kp R       &kp T                                      &kp Y   &kp U        &kp I        &kp O      &kp P         &mm_bspc_del
-                           &td_esc_caps &hm LGUI A &hm LALT S &hm LSHIFT D &hm LCTRL F &kp G                                      &kp H   &hm LCTRL J  &hm LSHIFT K &hm LALT L &hm LGUI SEMI &kp SQT
+                           &td_esc_caps   &hm LGUI A &hm LALT S &hm LSHIFT D &hm LCTRL F &kp G                                      &kp H   &hm LCTRL J  &hm LSHIFT K &hm LALT L &hm LGUI SEMI &kp SQT
                            &kp LSHFT      &kp Z      &kp X      &kp C        &kp V       &kp B                                      &kp N   &kp M        &kp COMMA    &kp DOT    &kp FSLH      &kp LCTRL
-                                                                             &kp LGUI    &kp SPACE &mo 1                      &mo 2 &kp RET &kp LALT
+                                                                             &kp LGUI    &hm LSHIFT SPACE &mo 1        &mo 2 &hm LSHIFT RET &kp LALT
                                                 >;
                 };
                 number_layer {
