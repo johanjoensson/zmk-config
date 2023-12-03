@@ -57,30 +57,31 @@
                     tapping-term-ms = <200>;
                     bindings = <&kp RIGHT>, <&kp END>;
                 };
-                mm_bspc_del: modmorph_backspace_delete {
+                mm_bspc_del: backspace_delete {
                     compatible = "zmk,behavior-mod-morph";
-                    label = "MODMORP_BAKSPACE_DELETE";
+                    label = "BACKSPACE_DELETE";
                     #binding-cells = <0>;
-                    bindings = <&kp BSPC>, <&kp DEL>;
-                    mods = <(MOD_LSFT | MOD_RSFT)>;
+                    bindings = <&kp BACKSPACE>, <&kp DELETE>;
+                    mods = <(MOD_LSFT|MOD_RSFT)>;
+                    keep-mods = <(MOD_RSFT)>;
                 };
                 mm_swe_a_circ: modmorph_swe_a_circ {
                     compatible = "zmk,behavior-mod-morph";
-                    label = "MODMORP_BAKSPACE_DELETE";
+                    label = "MODMORPH_SWE_A_CIRC";
                     #binding-cells = <0>;
                     bindings = <&swe_a_circ>, <&swe_shift_a_circ>;
                     mods = <(MOD_LSFT | MOD_RSFT)>;
                 };
                 mm_swe_a_dia: modmorph_swe_a_dia {
                     compatible = "zmk,behavior-mod-morph";
-                    label = "MODMORP_BAKSPACE_DELETE";
+                    label = "MODMORPH_SWE_A_DIA";
                     #binding-cells = <0>;
                     bindings = <&swe_a_dia>, <&swe_shift_a_dia>;
                     mods = <(MOD_LSFT | MOD_RSFT)>;
                 };
                 mm_swe_o_dia: modmorph_swe_o_dia {
                     compatible = "zmk,behavior-mod-morph";
-                    label = "MODMORP_BAKSPACE_DELETE";
+                    label = "MODMORP_O_DIA";
                     #binding-cells = <0>;
                     bindings = <&swe_o_dia>, <&swe_shift_o_dia>;
                     mods = <(MOD_LSFT | MOD_RSFT)>;
