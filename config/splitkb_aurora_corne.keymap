@@ -36,7 +36,7 @@
                     tapping-term-ms = <200>;
                     bindings = <&kp LEFT>, <&kp HOME>;
                 };
-                td_downn_pgdn: tap_dance_down_pagedown {
+                td_down_pgdn: tap_dance_down_pagedown {
                     compatible = "zmk,behavior-tap-dance";
                     label = "TAP_DANCE_DOWN_PAGEDOWN";
                     #binding-cells = <0>;
