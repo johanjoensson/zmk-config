@@ -161,9 +161,9 @@
                                  = <&macro_press &kp LCTRL>
                                  , <&macro_press &kp LSHFT>
                                  , <&macro_tap &kp U>
+                                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp D &kp KP_N6 &kp RET>
                                  , <&macro_release &kp LSHFT>
                                  , <&macro_release &kp LCTRL>
-                                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp D &kp KP_N6 &kp RET>
                                  ;
                 };
         };
