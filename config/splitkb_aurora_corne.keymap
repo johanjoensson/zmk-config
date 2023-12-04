@@ -88,8 +88,6 @@
         };
         macros {
                 swe_a_circ: swe_a_circ {
-                    wait-ms = <25>;
-                    tap-ms = <20>;
                     label = "ZM_swe_a_circ";
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
@@ -97,12 +95,10 @@
                             = <&macro_press &kp LCTRL &kp LSHFT>
                             , <&macro_tap &kp U>
                             , <&macro_release &kp LCTRL &kp LSHFT>
-                            , <&macro_tap &kp 0 &kp 0 &kp E &kp 5 &kp SPACE>
+                            , <&macro_tap &kp E &kp 5 &kp SPACE>
                             ;
                 };
                 swe_shift_a_circ: swe_shift_a_circ {
-                    wait-ms = <25>;
-                    tap-ms = <20>;
                     label = "ZM_swe_shift_a_circ";
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
@@ -110,12 +106,10 @@
                             = <&macro_press &kp LCTRL &kp LSHFT>
                             , <&macro_tap &kp U>
                             , <&macro_release &kp LCTRL &kp LSHFT>
-                            , <&macro_tap &kp 0 &kp 0 &kp C &kp 5 &kp SPACE>
+                            , <&macro_tap &kp C &kp 5 &kp SPACE>
                             ;
                 };
                 swe_a_dia: swe_a_dia {
-                    wait-ms = <25>;
-                    tap-ms = <20>;
                     label = "ZM_swe_a_dia";
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
@@ -123,12 +117,10 @@
                             = <&macro_press &kp LCTRL &kp LSHFT>
                             , <&macro_tap &kp U>
                             , <&macro_release &kp LCTRL &kp LSHFT>
-                            , <&macro_tap &kp 0 &kp 0 &kp E &kp 4 &kp SPACE>
+                            , <&macro_tap &kp E &kp 4 &kp SPACE>
                             ;
                 };
                 swe_shift_a_dia: swe_shift_a_dia {
-                    wait-ms = <25>;
-                    tap-ms = <20>;
                     label = "ZM_swe_shift_a_dia";
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
@@ -136,12 +128,10 @@
                             = <&macro_press &kp LCTRL &kp LSHFT>
                             , <&macro_tap &kp U>
                             , <&macro_release &kp LCTRL &kp LSHFT>
-                            , <&macro_tap &kp 0 &kp 0 &kp C &kp 4 &kp SPACE>
+                            , <&macro_tap &kp C &kp 4 &kp SPACE>
                             ;
                 };
                 swe_o_dia: swe_o_dia {
-                    wait-ms = <25>;
-                    tap-ms = <20>;
                     label = "ZM_swe_o_dia";
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
@@ -149,12 +139,10 @@
                             = <&macro_press &kp LCTRL &kp LSHFT>
                             , <&macro_tap &kp U>
                             , <&macro_release &kp LCTRL &kp LSHFT>
-                            , <&macro_tap &kp 0 &kp 0 &kp F &kp 6 &kp SPACE>
+                            , <&macro_tap &kp F &kp 6 &kp SPACE>
                             ;
                 };
                 swe_shift_o_dia: swe_shift_o_dia {
-                    wait-ms = <25>;
-                    tap-ms = <20>;
                     label = "ZM_swe_shift_o_dia";
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
@@ -162,7 +150,7 @@
                             = <&macro_press &kp LCTRL &kp LSHFT>
                             , <&macro_tap &kp U>
                             , <&macro_release &kp LCTRL &kp LSHFT>
-                            , <&macro_tap &kp 0 &kp 0 &kp D &kp 6 &kp SPACE>
+                            , <&macro_tap &kp D &kp 6 &kp SPACE>
                             ;
                 };
         };
