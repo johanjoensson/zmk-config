@@ -59,7 +59,7 @@
                 };
                 mm_bspc_del: backspace_delete {
                     compatible = "zmk,behavior-mod-morph";
-                    label = "BACKSPACE_DELETE";
+                    label = "MODMORPH_BACKSPACE_DELETE";
                     #binding-cells = <0>;
                     bindings = <&kp BACKSPACE>, <&kp DELETE>;
                     mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -82,7 +82,7 @@
                     compatible = "zmk,behavior-mod-morph";
                     label = "MODMORP_O_DIA";
                     #binding-cells = <0>;
-                    bindings = <&swe_o_dia>, <&swe_shift_o_dia>;
+                    bindings = <&swe_shift_o_dia>, <&swe_o_dia>;
                     mods = <(MOD_LSFT | MOD_RSFT)>;
                 };
         };
