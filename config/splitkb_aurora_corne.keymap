@@ -92,9 +92,7 @@
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
                     bindings
-                            = <&macro_press &kp LCTRL &kp LSHFT>
-                            , <&macro_tap &kp U>
-                            , <&macro_release &kp LCTRL &kp LSHFT>
+                            = <&macro_tap &kp LC(LS(U))>
                             , <&macro_tap &kp E &kp KP_N5 &kp SPACE>
                             ;
                 };
@@ -103,9 +101,7 @@
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
                     bindings
-                            = <&macro_press &kp LCTRL &kp LSHFT>
-                            , <&macro_tap &kp U>
-                            , <&macro_release &kp LCTRL &kp LSHFT>
+                            = <&macro_tap &kp LC(LS(U))>
                             , <&macro_tap &kp C &kp KP_N5 &kp SPACE>
                             ;
                 };
@@ -114,9 +110,7 @@
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
                     bindings
-                            = <&macro_press &kp LCTRL &kp LSHFT>
-                            , <&macro_tap &kp U>
-                            , <&macro_release &kp LCTRL &kp LSHFT>
+                            = <&macro_tap &kp LC(LS(U))>
                             , <&macro_tap &kp E &kp KP_N4 &kp SPACE>
                             ;
                 };
@@ -125,9 +119,7 @@
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
                     bindings
-                            = <&macro_press &kp LCTRL &kp LSHFT>
-                            , <&macro_tap &kp U>
-                            , <&macro_release &kp LCTRL &kp LSHFT>
+                            = <&macro_tap &kp LC(LS(U))>
                             , <&macro_tap &kp C &kp KP_N4 &kp SPACE>
                             ;
                 };
@@ -136,9 +128,7 @@
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
                     bindings
-                            = <&macro_press &kp LCTRL &kp LSHFT>
-                            , <&macro_tap &kp U>
-                            , <&macro_release &kp LCTRL &kp LSHFT>
+                            = <&macro_tap &kp LC(LS(U))>
                             , <&macro_tap &kp F &kp KP_N6 &kp SPACE>
                             ;
                 };
@@ -147,9 +137,7 @@
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
                     bindings
-                            = <&macro_press &kp LCTRL &kp LSHFT>
-                            , <&macro_tap &kp U>
-                            , <&macro_release &kp LCTRL &kp LSHFT>
+                            = <&macro_tap &kp LC(LS(U))>
                             , <&macro_tap &kp D &kp KP_N6 &kp SPACE>
                             ;
                 };
