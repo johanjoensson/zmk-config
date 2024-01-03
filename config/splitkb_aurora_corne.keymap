@@ -227,19 +227,19 @@
 
                 numpad_layer {
                                                 bindings = <
-                           &none  &kp F7 &kp F8 &kp F9 &kp F10  &none                   &kp KP_MULTIPLY  &kp N7  &kp N8 &kp N9 &kp MINUS &none 
-                           &none  &kp F4 &kp F5 &kp F6 &kp F11  &none                   &kp FSLH         &kp N4  &kp N5 &kp N6 &kp PLUS  &none 
-                           &none  &kp F1 &kp F2 &kp F3 &kp F12  &none                   &none            &kp N1  &kp N2 &kp N3 &none      &none 
-                                                       &none    &trans &none      &mo 3 &kp N0    &none 
+                           &none        &none        &none        &none        &none        &none                           &kp KP_MULTIPLY  &kp N7  &kp N8 &kp N9 &kp MINUS &none 
+                           &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                    &kp FSLH         &kp N4  &kp N5 &kp N6 &kp PLUS  &none 
+                           &out OUT_TOG &out OUT_BLE &none        &none        &none        &none                           &none            &kp N1  &kp N2 &kp N3 &none      &none 
+                                                                               &none        &none        &none        &mo 3 &kp N0    &none 
                                                 >;
                 };
 
                 nav_layer {
                                                bindings = <
-                           &none        &none        &none        &none        &none        &none                           &caps_word    &kp K_COPY    &kp K_PASTE &none         &none  &none 
-                           &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                    &td_left_home &td_down_pgdn &td_up_pgup &td_right_end &none  &none 
-                           &out OUT_TOG &out OUT_BLE &none        &none        &none        &none                           &none         &none         &none       &none         &none  &none 
-                                                                               &none        &none        &none       &none  &none         &none 
+                           &none  &none  &kp F7 &kp F8 &kp F9 &kp F10                    &caps_word    &kp K_COPY    &kp K_PASTE &none         &none  &none 
+                           &none  &none  &kp F4 &kp F5 &kp F6 &kp F11                    &td_left_home &td_down_pgdn &td_up_pgup &td_right_end &none  &none 
+                           &none  &none  &kp F1 &kp F2 &kp F3 &kp F12                    &none         &none         &none       &none         &none  &none 
+                                                       &none  &trans  &none      &none   &none         &none 
                                                 >;
                 };
         };
