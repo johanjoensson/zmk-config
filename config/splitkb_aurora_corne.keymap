@@ -85,6 +85,8 @@
                     bindings = <&swe_o_dia>, <&swe_shift_o_dia>;
                     mods = <(MOD_LSFT | MOD_RSFT)>;
                 };
+                caps_words{
+                };
         };
         macros {
                 swe_a_circ: swe_a_circ {
