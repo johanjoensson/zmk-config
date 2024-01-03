@@ -10,10 +10,10 @@
 #include <dt-bindings/zmk/outputs.h>
 
 
-&caps_word{
-};
 / {
         behaviors {
+                caps_word{
+                };
                 hm: homerow_mod{
                     compatible = "zmk,behavior-hold-tap";
                     label = "HOMEROW_MODS";
