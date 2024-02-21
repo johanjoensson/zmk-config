@@ -26,13 +26,13 @@
                 };
                 td_num: tap_dance_mod_tap {
                         compatible = "zmk, behavior-tap-dance";
-                        #binding-cells = <1>;
+                        #binding-cells = <0>;
                         tapping-term-ms = <200>;
                         bindings = <&ht &mo 2 &sl 2>, <&ht &mo 2 &tog 2>;
                 };
                 td_sym: tap_dance_mod_tap {
                         compatible = "zmk, behavior-tap-dance";
-                        #binding-cells = <1>;
+                        #binding-cells = <0>;
                         tapping-term-ms = <200>;
                         bindings = <&ht &mo 1 &sl 1>, <&ht &mo 1 &tog 1>;
                 };
