@@ -24,13 +24,13 @@
                     flavor = "tap-preferred";
                     bindings = <&kp>, <&kp>;
                 };
-                td_num: tap_dance_mod_tap {
+                td_num: tap_dance_num_tap {
                         compatible = "zmk, behavior-tap-dance";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
                         bindings = <&ht &mo 2 &sl 2>, <&ht &mo 2 &tog 2>;
                 };
-                td_sym: tap_dance_mod_tap {
+                td_sym: tap_dance_sym_tap {
                         compatible = "zmk, behavior-tap-dance";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
