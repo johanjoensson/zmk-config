@@ -12,8 +12,6 @@
 
 / {
         behaviors {
-                caps_word{
-                };
                 th: toggle_layer_hold_tap{
                     compatible = "zmk,behavior-hold-tap";
                     label = "GENERIC_HOLD_TAP";
@@ -38,13 +36,13 @@
                         compatible = "zmk, behavior-tap-dance";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
-                        bindings = <&ht 2 2>, <&th 2 2>;
+                        bindings = <&th 2 2>, <&th 2 2>;
                 };
                 td_sym: tap_dance_sym_tap {
                         compatible = "zmk, behavior-tap-dance";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
-                        bindings = <&ht 1 1>, <&th 1 1>;
+                        bindings = <&th 1 1>, <&th 1 1>;
                 };
                 hm: homerow_mod{
                     compatible = "zmk,behavior-hold-tap";
