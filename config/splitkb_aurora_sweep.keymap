@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/mouse.h>
 
 
 #define QWE 0
@@ -15,6 +16,7 @@
 #define SYM 2
 #define NUM 3
 #define NAV 4
+#define MSE 5
 
 / {
         behaviors {
@@ -244,17 +246,25 @@
                                                 bindings = <
                            &tog CDH     &none        &none        &none        &none                           &kp KP_MULTIPLY  &kp N7  &kp N8 &kp N9 &kp MINUS
                            &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                    &kp FSLH         &kp N4  &kp N5 &kp N6 &kp PLUS 
-                           &out OUT_BLE &none        &none        &none        &none                           &none            &kp N1  &kp N2 &kp N3 &none    
+                           &out OUT_TOG &bt BT_CLR   &bt BT_PRV   &bt BT_NXT   &bt BT_CLR_ALL                  &kp COMMA        &kp N1  &kp N2 &kp N3 &ko DOT
                                                                                &trans       &tog NUM  &mo NAV  &kp N0
                                                 >;
                 };
 
                 nav_layer {
                                                bindings = <
-                           &none  &kp F7 &kp F8 &kp F9 &kp F10                    &caps_word    &kp K_COPY    &kp K_PASTE &none         &none
-                           &none  &kp F4 &kp F5 &kp F6 &kp F11                    &td_left_home &td_down_pgdn &td_up_pgup &td_right_end &none
-                           &none  &kp F1 &kp F2 &kp F3 &kp F12                    &none         &none         &none       &none         &none
-                                                       &trans &none &none &trans
+                           &kp C_VOL_UP  &kp F7 &kp F8 &kp F9 &kp F10                    &caps_word    &kp K_COPY    &kp K_PASTE &none         &none
+                           &kp C_VOL_DN  &kp F4 &kp F5 &kp F6 &kp F11                    &td_left_home &td_down_pgdn &td_up_pgup &td_right_end &none
+                           &kp C_MUTE    &kp F1 &kp F2 &kp F3 &kp F12                    &kp C_PREV    &kp C_PLAY    &C_NEXT     &none         &none
+                                                       &trans &tog NAV &tog NAV &trans
+                                                >;
+                };
+                mouse_layer {
+                                               bindings = <
+                           &none  &none    &none &none &none                    &none    &none &none &none &none
+                           &none  &none    &none &none &none                    &none    &none &none &none &none
+                           &none  &mkp MB2 &none &none &none                    &mkp MB1 &none &none &none &none
+                                                       &trans &tog MSE &tog MSE &trans
                                                 >;
                 };
         };
