@@ -27,20 +27,21 @@
                     tapping-term-ms = <200>;
                     bindings = <&mo>, <&sl>;
                 };
+
                 td_num: tap_dance_num {
                     compatible = "zmk,behavior-tap-dance";
-                    /* label = "TAP_DANCE_NUM"; */
                     #binding-cells = <0>;
                     tapping-term-ms = <200>;
                     bindings = <&mts NUM NUM>, <&tog NUM>, <&tog NUM>, <&tog MSE>;
                 };
+
                 td_sym: tap_dance_sym {
                     compatible = "zmk,behavior-tap-dance";
-                    /* label = "TAP_DANCE_SYM"; */
                     #binding-cells = <0>;
                     tapping-term-ms = <200>;
                     bindings = <&mts SYM SYM>, <&tog SYM>, <&tog SYM>, <&tog MSE>;
                 };
+                
                 hm: homerow_mod{
                     compatible = "zmk,behavior-hold-tap";
                     /* label = "HOMEROW_MODS"; */
@@ -234,7 +235,7 @@
                            &kp Q      &kp W      &kp E &kp R       &kp T                                     &kp Y   &kp U        &kp I      &kp O      &kp P        
                            &hm LGUI A &hm LALT S &kp D &hm LCTRL F &kp G                                     &kp H   &hm LCTRL J  &kp K      &hm LALT L &hm LGUI SEMI
                            &kp Z      &kp X      &kp C &kp V       &kp B                                     &kp N   &kp M        &kp COMMA  &kp DOT    &kp FSLH     
-                                                                   &hm LSHFT SPACE &td_num     &mts SYM SYM  &hm LSHFT RET
+                                                                   &hm LSHFT SPACE &td_num          &td_sym  &hm LSHFT RET
                                                 >;
                 };
 
@@ -243,7 +244,7 @@
                            &kp Q      &kp W      &kp F &kp P       &kp B                                     &kp J   &kp L        &kp U      &kp Y      &kp SEMI        
                            &hm LGUI A &hm LALT R &kp S &hm LCTRL T &kp G                                     &kp M   &hm LCTRL N  &kp E      &hm LALT I &hm LGUI O
                            &kp Z      &kp X      &kp C &kp D       &kp V                                     &kp K   &kp H        &kp COMMA  &kp DOT    &kp FSLH     
-                                                                   &hm LSHFT SPACE &td_num     &mts SYM SYM  &hm LSHFT RET
+                                                                   &hm LSHFT SPACE &td_num          &td_sym  &hm LSHFT RET
                                                 >;
                 };
 
