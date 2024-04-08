@@ -239,7 +239,7 @@
                            &kp TAB      &kp Q      &kp W      &kp E &kp R       &kp T                                  &kp Y   &kp U        &kp I      &kp O      &kp P         &mm_bspc_del
                            &td_esc_caps &hm LGUI A &hm LALT S &kp D &hm LCTRL F &kp G                                  &kp H   &hm LCTRL J  &kp K      &hm LALT L &hm LGUI SEMI &kp SQT
                            &kp LSHFT    &kp Z      &kp X      &kp C &kp V       &kp B                                  &kp N   &kp M        &kp COMMA  &kp DOT    &kp FSLH      &kp DELETE
-                                                                    &kp LS(LCTRL) &hm LSHFT SPACE &ts_num     &td_sym  &hm LSHFT RET &kp LS(LCTRL)
+                                                                    &kp LS(LCTRL) &hm LSHFT SPACE &td_num     &td_sym  &hm LSHFT RET &kp LS(LCTRL)
                                                 >;
                 };
                 colemak_dh_layer {
