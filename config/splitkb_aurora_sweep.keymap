@@ -32,14 +32,14 @@
                     label = "TAP_DANCE_ESC_CAPS";
                     #binding-cells = <0>;
                     tapping-term-ms = <200>;
-                    bindings = <&mts NUM>, <&tog NUM>, <&tog NUM>, <&tog MSE>;
+                    bindings = <&mts NUM NUM>, <&tog NUM>, <&tog NUM>, <&tog MSE>;
                 };
                 td_sym: tap_dance_sym {
                     compatible = "zmk,behavior-tap-dance";
                     label = "TAP_DANCE_ESC_CAPS";
                     #binding-cells = <0>;
                     tapping-term-ms = <200>;
-                    bindings = <&mts SYM>, <&tog SYM>, <&tog SYM>, <&tog MSE>;
+                    bindings = <&mts SYM SYM>, <&tog SYM>, <&tog SYM>, <&tog MSE>;
                 };
                 hm: homerow_mod{
                     compatible = "zmk,behavior-hold-tap";
