@@ -178,7 +178,7 @@
                 };
                 combo_enter {
                         timeout-ms = <30>;
-                        key-positions = <17 18`;
+                        key-positions = <17 18>;
                         bindings = <&kp RET>;
                 };
                 combo_swe_a_circ {
