@@ -18,7 +18,7 @@
 
 / {
         behaviors {
-                mt: momentary_toggle {
+                mtg: momentary_toggle {
                     compatible = "zmk,behavior-hold-tap";
                     #binding-cells = <2>;
                     flavor = "tap-preferred";
@@ -218,7 +218,7 @@
                            &kp Q      &kp W      &kp E &kp R       &kp T                                     &kp Y   &kp U        &kp I      &kp O      &kp P        
                            &hm LGUI A &hm LALT S &kp D &hm LCTRL F &kp G                                     &kp H   &hm LCTRL J  &kp K      &hm LALT L &hm LGUI SEMI
                            &kp Z      &kp X      &kp C &kp V       &kp B                                     &kp N   &kp M        &kp COMMA  &kp DOT    &kp FSLH     
-                                                                   &hm LSHFT SPACE &mt SYM SYM  &mt NUM NUM  &hm LSHFT RET
+                                                                   &hm LSHFT SPACE &mtg SYM SYM  &mtg NUM NUM  &hm LSHFT RET
                                                 >;
                 };
 
@@ -227,7 +227,7 @@
                            &kp Q      &kp W      &kp F &kp P       &kp B                                     &kp J   &kp L        &kp U      &kp Y      &kp SEMI        
                            &hm LGUI A &hm LALT R &kp S &hm LCTRL T &kp G                                     &kp M   &hm LCTRL N  &kp E      &hm LALT I &hm LGUI O
                            &kp Z      &kp X      &kp C &kp D       &kp V                                     &kp K   &kp H        &kp COMMA  &kp DOT    &kp FSLH     
-                                                                   &hm LSHFT SPACE &mt SYM SYM  &mt NUM NUM  &hm LSHFT RET
+                                                                   &hm LSHFT SPACE &mtg SYM SYM  &mtg NUM NUM  &hm LSHFT RET
                                                 >;
                 };
 
