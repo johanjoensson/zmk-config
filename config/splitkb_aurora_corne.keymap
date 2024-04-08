@@ -12,38 +12,6 @@
 
 / {
         behaviors {
-                th: toggle_layer_hold_tap{
-                    compatible = "zmk,behavior-hold-tap";
-                    label = "GENERIC_HOLD_TAP";
-                    #binding-cells = <2>;
-                    tapping-term-ms = <200>;
-                    quick-tap-ms = <150>;
-                    require-prior-idle-ms = <0>;
-                    flavor = "tap-preferred";
-                    bindings = <&mo>, <&tog>;
-                };
-                sh: sticky_layer_hold_tap{
-                    compatible = "zmk,behavior-hold-tap";
-                    label = "GENERIC_HOLD_TAP";
-                    #binding-cells = <2>;
-                    tapping-term-ms = <200>;
-                    quick-tap-ms = <150>;
-                    require-prior-idle-ms = <0>;
-                    flavor = "tap-preferred";
-                    bindings = <&mo>, <&sl>;
-                };
-                td_num: tap_dance_num_tap {
-                        compatible = "zmk, behavior-tap-dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&th 2 2>, <&th 2 2>;
-                };
-                td_sym: tap_dance_sym_tap {
-                        compatible = "zmk, behavior-tap-dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&th 1 1>, <&th 1 1>;
-                };
                 hm: homerow_mod{
                     compatible = "zmk,behavior-hold-tap";
                     label = "HOMEROW_MODS";
@@ -242,7 +210,7 @@
                            &kp TAB      &kp Q      &kp W      &kp E &kp R       &kp T                                  &kp Y   &kp U        &kp I      &kp O      &kp P         &mm_bspc_del
                            &td_esc_caps &hm LGUI A &hm LALT S &kp D &hm LCTRL F &kp G                                  &kp H   &hm LCTRL J  &kp K      &hm LALT L &hm LGUI SEMI &kp SQT
                            &kp LSHFT    &kp Z      &kp X      &kp C &kp V       &kp B                                  &kp N   &kp M        &kp COMMA  &kp DOT    &kp FSLH      &kp DELETE
-                                                                    &kp LS(LCTRL)    &hm LSHFT SPACE &td_num   &td_sym &hm LSHFT RET &kp LS(LCTRL)
+                                                                    &kp LS(LCTRL)    &hm LSHFT SPACE &mo 2       &mo 1 &hm LSHFT RET &kp LS(LCTRL)
                                                 >;
                 };
 
