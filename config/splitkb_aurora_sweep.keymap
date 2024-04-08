@@ -255,7 +255,7 @@
                                                bindings = <
                            &kp C_VOL_UP  &kp F7 &kp F8 &kp F9 &kp F10                    &caps_word    &kp K_COPY    &kp K_PASTE &none         &none
                            &kp C_VOL_DN  &kp F4 &kp F5 &kp F6 &kp F11                    &td_left_home &td_down_pgdn &td_up_pgup &td_right_end &none
-                           &kp C_MUTE    &kp F1 &kp F2 &kp F3 &kp F12                    &kp C_PREV    &kp C_PLAY    &C_NEXT     &none         &none
+                           &kp C_MUTE    &kp F1 &kp F2 &kp F3 &kp F12                    &kp C_PREV    &kp C_PLAY    &kp C_NEXT  &none         &none
                                                        &trans &tog NAV &tog NAV &trans
                                                 >;
                 };
