@@ -31,14 +31,14 @@
                 td_num: tap_dance_num {
                     compatible = "zmk,behavior-tap-dance";
                     #binding-cells = <0>;
-                    tapping-term-ms = <100>;
+                    tapping-term-ms = <75>;
                     bindings = <&mts NUM NUM>, <&tog NUM>, <&tog NUM>, <&tog MSE>;
                 };
 
                 td_sym: tap_dance_sym {
                     compatible = "zmk,behavior-tap-dance";
                     #binding-cells = <0>;
-                    tapping-term-ms = <100>;
+                    tapping-term-ms = <75>;
                     bindings = <&mts SYM SYM>, <&tog SYM>, <&tog SYM>, <&tog MSE>;
                 };
                 
