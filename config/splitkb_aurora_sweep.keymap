@@ -23,7 +23,7 @@
                 mts: momentary_sticky {
                     compatible = "zmk,behavior-hold-tap";
                     #binding-cells = <2>;
-                    flavor = "hold-preferred";
+                    flavor = "balanced";
                     tapping-term-ms = <15>;
                     bindings = <&mo>, <&sl>;
                 };
