@@ -1,4 +1,4 @@
-/balanced*
+/*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -23,7 +23,7 @@
                 mts: momentary_sticky {
                     compatible = "zmk,behavior-hold-tap";
                     #binding-cells = <2>;
-                    flavor = "balanced";
+                    flavor = "hold-preferred";
                     tapping-term-ms = <15>;
                     bindings = <&mo>, <&sl>;
                 };
