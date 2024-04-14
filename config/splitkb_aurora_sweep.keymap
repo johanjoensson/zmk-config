@@ -24,21 +24,21 @@
                     compatible = "zmk,behavior-hold-tap";
                     #binding-cells = <2>;
                     flavor = "balanced";
-                    tapping-term-ms = <25>;
+                    tapping-term-ms = <15>;
                     bindings = <&mo>, <&sl>;
                 };
 
                 td_num: tap_dance_num {
                     compatible = "zmk,behavior-tap-dance";
                     #binding-cells = <0>;
-                    tapping-term-ms = <100>;
+                    tapping-term-ms = <150>;
                     bindings = <&mts NUM NUM>, <&tog NUM>, <&tog NUM>, <&tog MSE>;
                 };
 
                 td_sym: tap_dance_sym {
                     compatible = "zmk,behavior-tap-dance";
                     #binding-cells = <0>;
-                    tapping-term-ms = <100>;
+                    tapping-term-ms = <150>;
                     bindings = <&mts SYM SYM>, <&tog SYM>, <&tog SYM>, <&tog MSE>;
                 };
                 
@@ -54,31 +54,31 @@
                 td_esc_caps: tap_dance_esc_caps {
                     compatible = "zmk,behavior-tap-dance";
                     #binding-cells = <0>;
-                    tapping-term-ms = <100>;
+                    tapping-term-ms = <150>;
                     bindings = <&kp ESC>, <&kp CAPS>;
                 };
                 td_left_home: tap_dance_left_home {
                     compatible = "zmk,behavior-tap-dance";
                     #binding-cells = <0>;
-                    tapping-term-ms = <100>;
+                    tapping-term-ms = <150>;
                     bindings = <&kp LEFT>, <&kp HOME>;
                 };
                 td_down_pgdn: tap_dance_down_pagedown {
                     compatible = "zmk,behavior-tap-dance";
                     #binding-cells = <0>;
-                    tapping-term-ms = <100>;
+                    tapping-term-ms = <150>;
                     bindings = <&kp DOWN>, <&kp PG_DN>;
                 };
                 td_up_pgup: tap_dance_up_pageup {
                     compatible = "zmk,behavior-tap-dance";
                     #binding-cells = <0>;
-                    tapping-term-ms = <100>;
+                    tapping-term-ms = <150>;
                     bindings = <&kp UP>, <&kp PG_UP>;
                 };
                 td_right_end: tap_dance_right_end {
                     compatible = "zmk,behavior-tap-dance";
                     #binding-cells = <0>;
-                    tapping-term-ms = <100>;
+                    tapping-term-ms = <150>;
                     bindings = <&kp RIGHT>, <&kp END>;
                 };
                 mm_bspc_del: backspace_delete {
@@ -89,7 +89,6 @@
                 };
                 mm_swe_a_circ: modmorph_swe_a_circ {
                     compatible = "zmk,behavior-mod-morph";
-                    /* label = "MODMORPH_SWE_A_CIRC"; */
                     #binding-cells = <0>;
                     bindings = <&swe_a_circ>, <&swe_shift_a_circ>;
                     mods = <(MOD_LSFT | MOD_RSFT)>;
